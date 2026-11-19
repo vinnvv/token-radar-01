@@ -83,6 +83,10 @@ td.num, th.num { text-align: right; }
 .neg { color: var(--color-accent-2); }
 .implied .num { color: var(--color-ink); font-weight: 500; }
 .status { color: var(--color-muted); font-size: var(--text-sm); white-space: nowrap; }
+.verdict { font-family: var(--font-outlier); font-size: var(--text-sm); white-space: nowrap; }
+.verdict-farm { color: var(--color-ink-2); }
+.verdict-thin { color: var(--color-muted); }
+.verdict-skip { color: var(--color-accent-2); }
 .model { margin-top: var(--space-2xl); padding: var(--space-xl); display: grid; gap: var(--space-md); background: var(--color-paper-2); border-top: var(--rule-bar) solid var(--color-rule-2); }
 .model h2 { font-size: 1.75rem; }
 .formula { font-family: var(--font-outlier); font-size: var(--text-sm); line-height: 1.7; color: var(--color-muted); overflow-wrap: anywhere; }
