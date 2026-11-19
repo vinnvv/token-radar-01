@@ -104,7 +104,7 @@ check('dossier size', dossierStat.length <= 1.5 * 1024 * 1024, (dossierStat.leng
 // Cross-check: data.js rows agree with board.json rows.
 const radar = JSON.parse(dataJs.replace(/^window\.RADAR\s*=\s*/, '').replace(/;\s*$/, ''));
 check('data.js rows match board', radar.rows.length === rows.length && radar.rows.every((r, i) => r.slug === rows[i].slug && r.implied_value_usd === rows[i].implied_value_usd), radar.rows.length + ' rows');
-check('data.js model version', radar.model_version === 'radar-2');
+check('data.js model version', radar.model_version === 'radar-3');
 
 console.log(errors.length === 0 ? '\nALL GATE CHECKS PASSED' : '\nFAILED: ' + errors.join(', '));
 process.exit(errors.length === 0 ? 0 : 1);
